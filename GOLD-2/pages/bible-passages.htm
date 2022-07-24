@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="English-Tagalog Bible gives you fast searching &amp; browsing of the King James version (KJV) and the Ang Bibliya version of the Bible." />
+<title>Popular Bible Passages | English-Tagalog Bible</title>
+
+<script type="text/javascript" language="JavaScript" src="../js/jquery.min.1.6.1.js"></script>
+<link type="text/css" rel="stylesheet" media="all" href="../style.css" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var $topicFilter = $("input#topicFilter");
+	
+	if ($topicFilter.val() != 'Search a Topic') {
+		filterTopics($.trim($topicFilter.val()));
+	}
+	
+	$topicFilter.keyup(function(e) {
+		var $self = $(this);
+		filterTopics($.trim($self.val()));
+	});
+});
+
+function filterTopics(filter) {
+	$("a.topic").each(function(i, topic) {
+		var $topic = $(topic);
+		
+		$topic.toggle($topic.text().toLowerCase().indexOf(filter.toLowerCase())  >= 0);
+	});
+}
+</script>
+
+<style type="text/css">
+a.topic{
+width: 100%;
+display:block;
+}
+a.topic > span.ref{
+color: gray;
+float: right;
+margin-left: 20px;
+}
+a.topic:hover{
+cursor:pointer;
+text-decoration:none;
+color:#086782;
+background-color:snow;
+font-weight:bold;
+color:#E25401;
+}
+a.topic:hover > span.ref{
+font-weight:bold;
+}
+input#topicFilter{
+width:400px;
+padding-left: 5px;
+}
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="header-content">
+		<div style="float:left;"><a href="../index.htm" class="home" title="English-Tagalog Bible Home Page">English-Tagalog Bible</a></div>
+		<div class="search">
+			<form id="searchPassage" method="get" action="http://englishtagalogbible.com/search.php">
+				<input type="text" id="qry" name="qry" 
+				onfocus="this.value=(this.value==&#39;Search the Bible&#39;) ? &#39;&#39; : this.value;" value="Search the Bible" 
+				onblur="this.value=(this.value==&#39;&#39;) ? &#39;Search the Bible&#39; : this.value;" />
+			</form>
+		</div>
+	</div>
+</div>
+<div id="main-wrapper">
+
+<div id="topsection"></div>
+
+<div id="contentwrapper">
+<div id="contentcolumn" class="bordered">
+<div class="innertube round-bordered white-bg">
+	<table style="width: 100%;" class="clear;">
+		<tbody>
+		<tr>
+			<td style="text-align: middle;"> <h1>Popular Bible Passages</h1></td>
+			<td style="text-align: right; padding-right: 5px;">
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	
+	<p>
+		Filter: <input type="text" id="topicFilter" name="topicFilter" class="search" onfocus="this.value=(this.value==&#39;Search a Topic&#39;) ? &#39;&#39; : this.value;" value="Search a Topic" onblur="this.value=(this.value==&#39;&#39;) ? &#39;Search a Topic&#39; : this.value;" />
+	</p>
+	
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 22:1-19&amp;title=Abraham Sacrifices Isaac">Abraham Sacrifices Isaac <span class="ref">Genesis 22:1-19</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 2:1-25&amp;title=Adam and Eve">Adam and Eve <span class="ref">Genesis 2:1-25</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 5:1-11&amp;title=Ananias and Sapphira">Ananias and Sapphira <span class="ref">Acts 5:1-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 3:13-17&amp;title=Baptism of Jesus">Baptism of Jesus <span class="ref">Matthew 3:13-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 5:1-12&amp;title=Beatitudes">Beatitudes <span class="ref">Matthew 5:1-12</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 2:1-20&amp;title=Birth of Jesus">Birth of Jesus <span class="ref">Luke 2:1-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 1:57-80&amp;title=Birth of John the Baptist">Birth of John the Baptist <span class="ref">Luke 1:57-80</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 2:1-47&amp;title=Birth of the Church">Birth of the Church <span class="ref">Acts 2:1-47</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 11:14-23&amp;title=Blind and Mute Demoniac Healed">Blind and Mute Demoniac Healed <span class="ref">Luke 11:14-23</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 8:22-26&amp;title=Blind Man's Sight Restored">Blind Man's Sight Restored <span class="ref">Mark 8:22-26</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:27-31&amp;title=Blind Men Healed">Blind Men Healed <span class="ref">Matthew 9:27-31</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 18:35-43&amp;title=Blind Men Receive Sight">Blind Men Receive Sight <span class="ref">Luke 18:35-43</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 10:46-52&amp;title=Blind Men Receive Sight">Blind Men Receive Sight <span class="ref">Mark 10:46-52</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 20:29-34&amp;title=Blind Men Receive Sight">Blind Men Receive Sight <span class="ref">Matthew 20:29-34</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 3:1-21&amp;title=Born Again">Born Again <span class="ref">John 3:1-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 9:37-43&amp;title=Boy Healed from Demon">Boy Healed from Demon <span class="ref">Luke 9:37-43</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 9:14-29&amp;title=Boy Healed from Demon">Boy Healed from Demon <span class="ref">Mark 9:14-29</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 17:14-20&amp;title=Boy Healed from Demon">Boy Healed from Demon <span class="ref">Matthew 17:14-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 2:41-52&amp;title=Boy Jesus at the Temple">Boy Jesus at the Temple <span class="ref">Luke 2:41-52</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 6:25-29&amp;title=Bread of Life">Bread of Life <span class="ref">John 6:25-29</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 4:1-16&amp;title=Cain and Abel">Cain and Abel <span class="ref">Genesis 4:1-16</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 5:1-11&amp;title=Calling of the First Disciples">Calling of the First Disciples <span class="ref">Luke 5:1-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 7:24-30&amp;title=Canaanite Girl Healed">Canaanite Girl Healed <span class="ref">Mark 7:24-30</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 15:21-28&amp;title=Canaanite Girl Healed">Canaanite Girl Healed <span class="ref">Matthew 15:21-28</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 21:1-14&amp;title=Catch of Fish">Catch of Fish <span class="ref">John 21:1-14</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 5:1-11&amp;title=Catch of Fish">Catch of Fish <span class="ref">Luke 5:1-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 7:1-10&amp;title=Centurion's Servant Healed">Centurion's Servant Healed <span class="ref">Luke 7:1-10</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 8:5-13&amp;title=Centurion's Servant Healed">Centurion's Servant Healed <span class="ref">Matthew 8:5-13</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Romans 12:1-30&amp;title=Christian Living">Christian Living <span class="ref">Romans 12:1-30</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 9:1-19&amp;title=Conversion of Saul of Tarsus">Conversion of Saul of Tarsus <span class="ref">Acts 9:1-19</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 14:25-33&amp;title=Cost of Being a Disciple">Cost of Being a Disciple <span class="ref">Luke 14:25-33</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 1-2:3&amp;title=Creation">Creation <span class="ref">Genesis 1-2:3</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 3:1-16&amp;title=Crippled Beggar Healed">Crippled Beggar Healed <span class="ref">Acts 3:1-16</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 13:10-17&amp;title=Crippled Woman Healed">Crippled Woman Healed <span class="ref">Luke 13:10-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 27:1-66&amp;title=Crucifixion of Jesus">Crucifixion of Jesus <span class="ref">Matthew 27:1-66</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Daniel 6:16-24&amp;title=Daniel in the Lion's Den">Daniel in the Lion's Den <span class="ref">Daniel 6:16-24</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Samuel 11:1-27&amp;title=David and Bathsheba">David and Bathsheba <span class="ref">Samuel 11:1-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Samuel 17:4-50&amp;title=David and Goliath">David and Goliath <span class="ref">Samuel 17:4-50</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 7:31-37&amp;title=Deaf and Mute Man Healed">Deaf and Mute Man Healed <span class="ref">Mark 7:31-37</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 27:45-56&amp;title=Death of Jesus">Death of Jesus <span class="ref">Matthew 27:45-56</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 7:36-50&amp;title=Debtors">Debtors <span class="ref">Luke 7:36-50</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 8:26-33&amp;title=Demonic Men Healed">Demonic Men Healed <span class="ref">Luke 8:26-33</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 5:1-20&amp;title=Demonic Men Healed">Demonic Men Healed <span class="ref">Mark 5:1-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 8:28-34&amp;title=Demonic Men Healed">Demonic Men Healed <span class="ref">Matthew 8:28-34</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 14:25-35&amp;title=Discipleship">Discipleship <span class="ref">Luke 14:25-35</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Kings 18:1-45&amp;title=Elijah versus the Priests of Baal">Elijah versus the Priests of Baal <span class="ref">Kings 18:1-45</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Exodus 12:31-42&amp;title=Exodus of the Hebrew Slaves out of Egypt">Exodus of the Hebrew Slaves out of Egypt <span class="ref">Exodus 12:31-42</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Ezekiel 37:1-28&amp;title=Ezekiel and the Valley of the Dry Bones">Ezekiel and the Valley of the Dry Bones <span class="ref">Ezekiel 37:1-28</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 7:1-10&amp;title=Faith of the Centurion">Faith of the Centurion <span class="ref">Luke 7:1-10</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 12:42-48&amp;title=Faithful Steward">Faithful Steward <span class="ref">Luke 12:42-48</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 3:1-24&amp;title=Fall of Man">Fall of Man <span class="ref">Genesis 3:1-24</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 15:29-39&amp;title=Feeding of the 4,000">Feeding of the 4,000 <span class="ref">Matthew 15:29-39</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 6:1-15&amp;title=Feeding of the 5,000">Feeding of the 5,000 <span class="ref">John 6:1-15</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 9:10-17&amp;title=Feeding of the 5,000">Feeding of the 5,000 <span class="ref">Luke 9:10-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 6:30-44&amp;title=Feeding of the 5,000">Feeding of the 5,000 <span class="ref">Mark 6:30-44</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 14:13-21&amp;title=Feeding of the 5,000">Feeding of the 5,000 <span class="ref">Matthew 14:13-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 21:29-33&amp;title=Fig Tree">Fig Tree <span class="ref">Luke 21:29-33</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 13:28-31&amp;title=Fig Tree">Fig Tree <span class="ref">Mark 13:28-31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 24:32-35&amp;title=Fig Tree">Fig Tree <span class="ref">Matthew 24:32-35</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 13:6-9&amp;title=Fig Tree (Barren)">Fig Tree (Barren) <span class="ref">Luke 13:6-9</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 11:12-14&amp;title=Fig Tree Withers">Fig Tree Withers <span class="ref">Mark 11:12-14</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 21:18-22&amp;title=Fig Tree Withers">Fig Tree Withers <span class="ref">Matthew 21:18-22</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:47-50&amp;title=Fisherman's Net">Fisherman's Net <span class="ref">Matthew 13:47-50</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 7:1-24&amp;title=Flood">Flood <span class="ref">Genesis 7:1-24</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 1:1-17&amp;title=Genealogy of Jesus">Genealogy of Jesus <span class="ref">Matthew 1:1-17</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 12:13-17&amp;title=Giving to Caesar">Giving to Caesar <span class="ref">Mark 12:13-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 6:31&amp;title=Golden Rule">Golden Rule <span class="ref">Luke 6:31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 10:25-37&amp;title=Good Samaritan">Good Samaritan <span class="ref">Luke 10:25-37</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 10:1-21&amp;title=Good Shepherd">Good Shepherd <span class="ref">John 10:1-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Psalm 23:1-6&amp;title=Good Shepherd Psalm">Good Shepherd Psalm <span class="ref">Psalm 23:1-6</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 14:15-24&amp;title=Great Banquet">Great Banquet <span class="ref">Luke 14:15-24</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 28:16-20&amp;title=Great Commission">Great Commission <span class="ref">Matthew 28:16-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 22:34-40&amp;title=Greatest Commandment">Greatest Commandment <span class="ref">Matthew 22:34-40</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 4:26-29&amp;title=Growing Seed">Growing Seed <span class="ref">Mark 4:26-29</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 5:1-9&amp;title=Healing at the Pool">Healing at the Pool <span class="ref">John 5:1-9</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 7:24-27&amp;title=House on the Rock">House on the Rock <span class="ref">Matthew 7:24-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 13:32-37&amp;title=Household Watching">Household Watching <span class="ref">Mark 13:32-37</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 28:10-12&amp;title=Jacob's Ladder">Jacob's Ladder <span class="ref">Genesis 28:10-12</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 5:22-43&amp;title=Jairus' Daughter Raised">Jairus' Daughter Raised <span class="ref">Mark 5:22-43</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:18-26&amp;title=Jairus' Daughter Raised">Jairus' Daughter Raised <span class="ref">Matthew 9:18-26</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 27:11-26&amp;title=Jesus Before Pilate">Jesus Before Pilate <span class="ref">Matthew 27:11-26</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 8:22-25&amp;title=Jesus Calms the Storm">Jesus Calms the Storm <span class="ref">Luke 8:22-25</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 4:35-41&amp;title=Jesus Calms the Storm">Jesus Calms the Storm <span class="ref">Mark 4:35-41</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 8:23-27&amp;title=Jesus Calms the Storm">Jesus Calms the Storm <span class="ref">Matthew 8:23-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 2:12-25&amp;title=Jesus Clears the Temple">Jesus Clears the Temple <span class="ref">John 2:12-25</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 20:24-29&amp;title=Jesus Convinces Thomas">Jesus Convinces Thomas <span class="ref">John 20:24-29</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 4:28-30&amp;title=Jesus Goes Unseen">Jesus Goes Unseen <span class="ref">Luke 4:28-30</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 6:15-21&amp;title=Jesus Walks on Water">Jesus Walks on Water <span class="ref">John 6:15-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 6:45-52&amp;title=Jesus Walks on Water">Jesus Walks on Water <span class="ref">Mark 6:45-52</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 14:22-27&amp;title=Jesus Walks on Water">Jesus Walks on Water <span class="ref">Matthew 14:22-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 13:1-17&amp;title=Jesus Washes Disciples' Feet">Jesus Washes Disciples' Feet <span class="ref">John 13:1-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 11:2-4&amp;title=Jesus' Teaching on Prayer">Jesus' Teaching on Prayer <span class="ref">Luke 11:2-4</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 11:1-11&amp;title=Jesus' Triumphal Entry into Jerusalem">Jesus' Triumphal Entry into Jerusalem <span class="ref">Mark 11:1-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Job 1:1-22&amp;title=Job Is Tested">Job Is Tested <span class="ref">Job 1:1-22</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Jonah 1:1-17&amp;title=Jonah and the Fish">Jonah and the Fish <span class="ref">Jonah 1:1-17</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 37:12-36&amp;title=Joseph and the Coat of Many Colors">Joseph and the Coat of Many Colors <span class="ref">Genesis 37:12-36</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Joshua 6:1-20&amp;title=Joshua and the Battle of Jericho">Joshua and the Battle of Jericho <span class="ref">Joshua 6:1-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 22:1-6&amp;title=Judas Betrays Jesus">Judas Betrays Jesus <span class="ref">Luke 22:1-6</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 22:7-38&amp;title=Last Supper">Last Supper <span class="ref">Luke 22:7-38</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 11:38-44&amp;title=Lazarus Raised from the Dead">Lazarus Raised from the Dead <span class="ref">John 11:38-44</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 17:11-19&amp;title=Lepers Healed">Lepers Healed <span class="ref">Luke 17:11-19</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 8:16-18; 11:33-36&amp;title=Light Under a Bowl">Light Under a Bowl <span class="ref">Luke 8:16-18; 11:33-36</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 4:21-25&amp;title=Light Under a Bowl">Light Under a Bowl <span class="ref">Mark 4:21-25</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 5:14-16&amp;title=Light Under a Bowl">Light Under a Bowl <span class="ref">Matthew 5:14-16</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 4:1-26&amp;title=Living Water">Living Water <span class="ref">John 4:1-26</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 6:5-15&amp;title=Lord's Prayer">Lord's Prayer <span class="ref">Matthew 6:5-15</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 26:17-30&amp;title=Lord's Supper">Lord's Supper <span class="ref">Matthew 26:17-30</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 15:8-10&amp;title=Lost Coin">Lost Coin <span class="ref">Luke 15:8-10</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 15:3-7&amp;title=Lost Sheep">Lost Sheep <span class="ref">Luke 15:3-7</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 18:10-14&amp;title=Lost Sheep">Lost Sheep <span class="ref">Matthew 18:10-14</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=1 Corinthians 13:1-20&amp;title=Love, the Greatest Gift">Love, the Greatest Gift <span class="ref">1 Corinthians 13:1-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 22:50-51&amp;title=Malchus' Ear Healed">Malchus' Ear Healed <span class="ref">Luke 22:50-51</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 9:1-41&amp;title=Man Born Blind Healed">Man Born Blind Healed <span class="ref">John 9:1-41</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 4:31-37&amp;title=Man with Evil Spirit Healed">Man with Evil Spirit Healed <span class="ref">Luke 4:31-37</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 1:21-28&amp;title=Man with Evil Spirit Healed">Man with Evil Spirit Healed <span class="ref">Mark 1:21-28</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 14:1-6&amp;title=Man's Dropsy Healed">Man's Dropsy Healed <span class="ref">Luke 14:1-6</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 6:6-11&amp;title=Man's Withered Hand Healed">Man's Withered Hand Healed <span class="ref">Luke 6:6-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 3:1-6&amp;title=Man's Withered Hand Healed">Man's Withered Hand Healed <span class="ref">Mark 3:1-6</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 12:9-14&amp;title=Man's Withered Hand Healed">Man's Withered Hand Healed <span class="ref">Matthew 12:9-14</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 10:38-42&amp;title=Mary and Martha">Mary and Martha <span class="ref">Luke 10:38-42</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 12:1-8&amp;title=Mary Anoints Jesus">Mary Anoints Jesus <span class="ref">John 12:1-8</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 17:7-10&amp;title=Master and Servant">Master and Servant <span class="ref">Luke 17:7-10</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Exodus 3:1-21&amp;title=Moses and the Burning Bush">Moses and the Burning Bush <span class="ref">Exodus 3:1-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Exodus 2:1-24&amp;title=Moses' Birth">Moses' Birth <span class="ref">Exodus 2:1-24</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 13:18-19&amp;title=Mustard Seed">Mustard Seed <span class="ref">Luke 13:18-19</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 4:30-32&amp;title=Mustard Seed">Mustard Seed <span class="ref">Mark 4:30-32</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:31-32&amp;title=Mustard Seed">Mustard Seed <span class="ref">Matthew 13:31-32</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:32-34&amp;title=Mute Man Healed">Mute Man Healed <span class="ref">Matthew 9:32-34</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 3:1-21&amp;title=New Birth">New Birth <span class="ref">John 3:1-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 5:36&amp;title=New Cloth">New Cloth <span class="ref">Luke 5:36</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 2:21&amp;title=New Cloth">New Cloth <span class="ref">Mark 2:21</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:16&amp;title=New Cloth">New Cloth <span class="ref">Matthew 9:16</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Revelation 21:1-8&amp;title=New Jerusalem">New Jerusalem <span class="ref">Revelation 21:1-8</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 5:37-39&amp;title=New Wine, Old Wineskins">New Wine, Old Wineskins <span class="ref">Luke 5:37-39</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 2:22&amp;title=New Wine, Old Wineskins">New Wine, Old Wineskins <span class="ref">Mark 2:22</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:17&amp;title=New Wine, Old Wineskins">New Wine, Old Wineskins <span class="ref">Matthew 9:17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 6:1-22&amp;title=Noah and the Ark">Noah and the Ark <span class="ref">Genesis 6:1-22</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 4:46-54&amp;title=Official's Son Healed">Official's Son Healed <span class="ref">John 4:46-54</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:1-23&amp;title=Parable of the Sower">Parable of the Sower <span class="ref">Matthew 13:1-23</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 5:17-26&amp;title=Paralytic Healed">Paralytic Healed <span class="ref">Luke 5:17-26</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 2:1-12&amp;title=Paralytic Healed">Paralytic Healed <span class="ref">Mark 2:1-12</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:1-8&amp;title=Paralytic Healed">Paralytic Healed <span class="ref">Matthew 9:1-8</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Exodus 12:1-29&amp;title=Passover">Passover <span class="ref">Exodus 12:1-29</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 13:1-12&amp;title=Paul and Barnabus">Paul and Barnabus <span class="ref">Acts 13:1-12</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 24:1-27&amp;title=Paul before Felix">Paul before Felix <span class="ref">Acts 24:1-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 17:16-34&amp;title=Paul in Athens">Paul in Athens <span class="ref">Acts 17:16-34</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 28:11-31&amp;title=Paul, Prisoner and Preacher in Rome">Paul, Prisoner and Preacher in Rome <span class="ref">Acts 28:11-31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:45-46&amp;title=Pearl of Great Price">Pearl of Great Price <span class="ref">Matthew 13:45-46</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 2:1-13&amp;title=Pentecost and the Holy Spirit">Pentecost and the Holy Spirit <span class="ref">Acts 2:1-13</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 22:54-62&amp;title=Peter Denies Christ">Peter Denies Christ <span class="ref">Luke 22:54-62</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 12:1-19&amp;title=Peter Rescued from Prison">Peter Rescued from Prison <span class="ref">Acts 12:1-19</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 10:1-48&amp;title=Peter Visits Cornelius">Peter Visits Cornelius <span class="ref">Acts 10:1-48</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 1:29-31&amp;title=Peter's Mother-in-Law Healed">Peter's Mother-in-Law Healed <span class="ref">Mark 1:29-31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 18:9-10&amp;title=Pharisee and the Tax Collector">Pharisee and the Tax Collector <span class="ref">Luke 18:9-10</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Exodus 7-10&amp;title=Plagues on Egypt">Plagues on Egypt <span class="ref">Exodus 7-10</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 23:12-35&amp;title=Plot to Kill Paul">Plot to Kill Paul <span class="ref">Acts 23:12-35</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 3:1-12&amp;title=Preaching of John the Baptist">Preaching of John the Baptist <span class="ref">Matthew 3:1-12</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 15:11-32&amp;title=Prodigal (Lost) Son">Prodigal (Lost) Son <span class="ref">Luke 15:11-32</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=1 Corinthians 15:12-57&amp;title=Promise of Eternal Life">Promise of Eternal Life <span class="ref">1 Corinthians 15:12-57</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 24:1-53&amp;title=Resurrection of Jesus">Resurrection of Jesus <span class="ref">Luke 24:1-53</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 28:1-10&amp;title=Resurrection of Jesus">Resurrection of Jesus <span class="ref">Matthew 28:1-10</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 12:16-21&amp;title=Rich Fool">Rich Fool <span class="ref">Luke 12:16-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 16:19-31&amp;title=Rich Man and Lazarus">Rich Man and Lazarus <span class="ref">Luke 16:19-31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 10:17-31&amp;title=Rich Young Man">Rich Young Man <span class="ref">Mark 10:17-31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 24:13-35&amp;title=Risen Christ Appears">Risen Christ Appears <span class="ref">Luke 24:13-35</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Judges 16:1-31&amp;title=Samson and Delilah">Samson and Delilah <span class="ref">Judges 16:1-31</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 10:1-42&amp;title=Sending out the Twelve">Sending out the Twelve <span class="ref">Matthew 10:1-42</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 5:1-20&amp;title=Sermon on the Mount">Sermon on the Mount <span class="ref">Matthew 5:1-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 25:31-46&amp;title=Sheep and the Goats">Sheep and the Goats <span class="ref">Matthew 25:31-46</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Acts 27:1-44&amp;title=Shipwreck of Paul">Shipwreck of Paul <span class="ref">Acts 27:1-44</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 16:1-13&amp;title=Shrewd Manager">Shrewd Manager <span class="ref">Luke 16:1-13</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 19:1-29&amp;title=Sodom and Gomorrah">Sodom and Gomorrah <span class="ref">Genesis 19:1-29</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 8:4-15&amp;title=Sower">Sower <span class="ref">Luke 8:4-15</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 4:3-20&amp;title=Sower">Sower <span class="ref">Mark 4:3-20</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:1-13&amp;title=Sower">Sower <span class="ref">Matthew 13:1-13</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 25:14-30&amp;title=Talents">Talents <span class="ref">Matthew 25:14-30</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 17:24-27&amp;title=Temple Tax Provided">Temple Tax Provided <span class="ref">Matthew 17:24-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 4:1-11&amp;title=Temptation of Jesus">Temptation of Jesus <span class="ref">Matthew 4:1-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Exodus 20:1-21&amp;title=Ten Commandments">Ten Commandments <span class="ref">Exodus 20:1-21</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 19:11-27&amp;title=Ten Minas">Ten Minas <span class="ref">Luke 19:11-27</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=1 Corinthians 3:10-17&amp;title=The True Foundation">The True Foundation <span class="ref">1 Corinthians 3:10-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 14:1-7&amp;title=The Way to Life">The Way to Life <span class="ref">John 14:1-7</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Genesis 11:1-8&amp;title=Tower of Babel">Tower of Babel <span class="ref">Genesis 11:1-8</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 17:1-13&amp;title=Transfiguration of Jesus">Transfiguration of Jesus <span class="ref">Matthew 17:1-13</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 15:1-17&amp;title=True Vine">True Vine <span class="ref">John 15:1-17</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 21:28-32&amp;title=Two Sons">Two Sons <span class="ref">Matthew 21:28-32</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 18:21-36&amp;title=Unmerciful Servant">Unmerciful Servant <span class="ref">Matthew 18:21-36</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 20:9-19&amp;title=Vineyard and the Tenants">Vineyard and the Tenants <span class="ref">Luke 20:9-19</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 12:1-12&amp;title=Vineyard and the Tenants">Vineyard and the Tenants <span class="ref">Mark 12:1-12</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 21:33-46&amp;title=Vineyard and the Tenants">Vineyard and the Tenants <span class="ref">Matthew 21:33-46</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 2:1-12&amp;title=Visit of the Magi">Visit of the Magi <span class="ref">Matthew 2:1-12</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 12:35-40&amp;title=Watchful Servants">Watchful Servants <span class="ref">Luke 12:35-40</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 2:1-11&amp;title=Water Made into Wine">Water Made into Wine <span class="ref">John 2:1-11</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 19:16-30&amp;title=Wealth">Wealth <span class="ref">Matthew 19:16-30</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 22:1-14&amp;title=Wedding Banquet">Wedding Banquet <span class="ref">Matthew 22:1-14</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:24-30; 13:36-43&amp;title=Weeds">Weeds <span class="ref">Matthew 13:24-30; 13:36-43</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 9:46-50&amp;title=Who Will Be Greatest?">Who Will Be Greatest? <span class="ref">Luke 9:46-50</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 18:1-8&amp;title=Widow">Widow <span class="ref">Luke 18:1-8</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 12:41-44&amp;title=Widow's Offering">Widow's Offering <span class="ref">Mark 12:41-44</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 7:11-17&amp;title=Widow's Son Raised">Widow's Son Raised <span class="ref">Luke 7:11-17</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=John 4:1-42&amp;title=Woman at the Well">Woman at the Well <span class="ref">John 4:1-42</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Mark 5:25-34&amp;title=Woman's Issue of Blood Healed">Woman's Issue of Blood Healed <span class="ref">Mark 5:25-34</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 9:20-22&amp;title=Woman's Issue of Blood Healed">Woman's Issue of Blood Healed <span class="ref">Matthew 9:20-22</span></a>
+
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 20:1-16&amp;title=Workers in the Vineyard">Workers in the Vineyard <span class="ref">Matthew 20:1-16</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 12:22-24&amp;title=Worry">Worry <span class="ref">Luke 12:22-24</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 13:20-21&amp;title=Yeast">Yeast <span class="ref">Luke 13:20-21</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Matthew 13:33&amp;title=Yeast">Yeast <span class="ref">Matthew 13:33</span></a>
+<a class="topic" href="http://englishtagalogbible.com/search.php?qry=Luke 19:1-10&amp;title=Zacchaeus">Zacchaeus <span class="ref">Luke 19:1-10</span></a>
+
+	</div> <!-- innertube -->
+	
+	<div class="footer">
+		This site is a ministry of the <a href="http://philnavs.org">Navigators</a>
+	</div>
+</div> <!-- contentcolumn -->
+</div> <!-- contentwrapper -->
+
+<div id="leftcolumn">
+	<div class="innertube" id="book-links">
+		<h3>Old Testament</h3>
+		<ul class="books"><li><a href="../genesis.htm">Genesis</a></li><li><a href="../exodus.htm">Exodus</a></li><li><a href="../leviticus.htm">Leviticus</a></li><li><a href="../numbers.htm">Numbers</a></li><li><a href="../deuteronomy.htm">Deuteronomy</a></li><li><a href="../joshua.htm">Joshua</a></li><li><a href="../judges.htm">Judges</a></li><li><a href="../ruth.htm">Ruth</a></li><li><a href="../1st-samuel.htm">1 Samuel</a></li><li><a href="../2nd-samuel.htm">2 Samuel</a></li><li><a href="../1st-kings.htm">1 Kings</a></li><li><a href="../2nd-kings.htm">2 Kings</a></li><li><a href="../1st-chronicles.htm">1 Chronicles</a></li><li><a href="../2nd-chronicles.htm">2 Chronicles</a></li><li><a href="../ezra.htm">Ezra</a></li><li><a href="../nehemiah.htm">Nehemiah</a></li><li><a href="../esther.htm">Esther</a></li><li><a href="../job.htm">Job</a></li><li><a href="../psalms.htm">Psalms</a></li><li><a href="../proverbs.htm">Proverbs</a></li><li><a href="../ecclesiastes.htm">Ecclesiastes</a></li><li><a href="../song-solomon.htm">Song of Solomon</a></li><li><a href="../isaiah.htm">Isaiah</a></li><li><a href="../jeremiah.htm">Jeremiah</a></li><li><a href="../lamentations.htm">Lamentations</a></li><li><a href="../ezekiel.htm">Ezekiel</a></li><li><a href="../daniel.htm">Daniel</a></li><li><a href="../hosea.htm">Hosea</a></li><li><a href="../joel.htm">Joel</a></li><li><a href="../amos.htm">Amos</a></li><li><a href="../obadiah.htm">Obadiah</a></li><li><a href="../jonah.htm">Jonah</a></li><li><a href="../micah.htm">Micah</a></li><li><a href="../nahum.htm">Nahum</a></li><li><a href="../habakkuk.htm">Habakkuk</a></li><li><a href="../zephaniah.htm">Zephaniah</a></li><li><a href="../haggai.htm">Haggai</a></li><li><a href="../zechariah.htm">Zechariah</a></li><li><a href="../malachi.htm">Malachi</a></li>
+							</ul>
+							
+		<h3>New Testament</h3>
+		<ul class="books"><li><a href="../matthew.htm">Matthew</a></li><li><a href="../mark.htm">Mark</a></li><li><a href="../luke.htm">Luke</a></li><li><a href="../john.htm">John</a></li><li><a href="../acts.htm">Acts</a></li><li><a href="../romans.htm">Romans</a></li><li><a href="../1st-corinthians.htm">1 Corinthians</a></li><li><a href="../2nd-corinthians.htm">2 Corinthians</a></li><li><a href="../galatians.htm">Galatians</a></li><li><a href="../ephesians.htm">Ephesians</a></li><li><a href="../philippians.htm">Philippians</a></li><li><a href="../colossians.htm">Colossians</a></li><li><a href="../1st-thessalonians.htm">1 Thessalonians</a></li><li><a href="../2nd-thessalonians.htm">2 Thessalonians</a></li><li><a href="../1st-timothy.htm">1 Timothy</a></li><li><a href="../2nd-timothy.htm">2 Timothy</a></li><li><a href="../titus.htm">Titus</a></li><li><a href="../philemon.htm">Philemon</a></li><li><a href="../hebrews.htm">Hebrews</a></li><li><a href="../james.htm">James</a></li><li><a href="../1st-peter.htm">1 Peter</a></li><li><a href="../2nd-peter.htm">2 Peter</a></li><li><a href="../1st-john.htm">1 John</a></li><li><a href="../2nd-john.htm">2 John</a></li><li><a href="../3rd-john.htm">3 John</a></li><li><a href="../jude.htm">Jude</a></li><li><a href="../revelation.htm">Revelation</a></li></ul>
+
+	</div> <!-- innertube -->
+	
+	<div id="more-links" class="center">
+		<a href="bible-passages.htm">Popular Passages</a><br/>
+		<a href="daily-devotion/index.htm">Daily Devotion</a><br/>
+		<a href="bridge-to-life.htm">The Bridge to Life</a><br/>
+		<a href="math-game.htm">Simple Math Game</a><br/>
+		Find us on <a href="http://facebook.com/authorizedbible">Facebook</a>
+	</div>
+
+</div> <!-- #leftcolumn -->
+</div> <!-- main-wrapper -->
+
+</body>
+</html>
